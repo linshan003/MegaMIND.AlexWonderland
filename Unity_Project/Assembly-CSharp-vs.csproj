@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\HelloWorld.cs" />
+     <Compile Include="Assets\Scripts\VariableScript.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/David Lin/Documents/GitHub/MegaMIND.AlexWonderland/Unity_Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
