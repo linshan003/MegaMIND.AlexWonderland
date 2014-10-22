@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: GroundSpawn
+  m_Name: PowerupSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.86971331, y: 2.74304533, z: 3.82763672}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.07578969, y: -1.51202536, z: 3.82763672}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,11 +83,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj:
-  - {fileID: 100002, guid: 8131c0ceb6b30a74ab871f807d7fb47f, type: 2}
-  - {fileID: 100004, guid: 3ceb46ec836704645b9842d5121f6c9e, type: 2}
-  - {fileID: 100000, guid: b43690dd2031fd94685c9f3223642acf, type: 2}
-  spawnMin: 1
-  spawnMax: 2
+  - {fileID: 100000, guid: 6b0826480a84eed4e87ae943294e1147, type: 2}
+  spawnMin: 3
+  spawnMax: 6
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

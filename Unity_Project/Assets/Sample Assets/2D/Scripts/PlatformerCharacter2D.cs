@@ -14,8 +14,8 @@ public class PlatformerCharacter2D : MonoBehaviour
 	[SerializeField] LayerMask whatIsGround;			// A mask determining what is ground to the character
 	
 	Transform groundCheck;								// A position marking where to check if the player is grounded.
-	float groundedRadius = .2f;							// Radius of the overlap circle to determine if grounded
-	bool grounded = false;								// Whether or not the player is grounded.
+	float groundedRadius = 0.8f;							// Radius of the overlap circle to determine if grounded
+	bool grounded = true;								// Whether or not the player is grounded.
 	Transform ceilingCheck;								// A position marking where to check for ceilings
 	float ceilingRadius = .01f;							// Radius of the overlap circle to determine if the player can stand up
 	Animator anim;										// Reference to the player's animator component.
@@ -41,8 +41,9 @@ public class PlatformerCharacter2D : MonoBehaviour
 		// Set the vertical animation
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
 
-		if (grounded)
+		if (grounded){
 			doubleJump = false;
+		}
 	}
 
 
@@ -91,6 +92,9 @@ public class PlatformerCharacter2D : MonoBehaviour
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
 
             rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+
+			audio.Play();
+
 
 			if(!grounded)
 				doubleJump = true;
